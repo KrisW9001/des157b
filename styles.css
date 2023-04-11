@@ -1,0 +1,41 @@
+body{
+    background-image:url(images/background1.png);
+    background-size:1200px;
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-color:lightsteelblue;
+    transition-duration:0.5s;
+}
+
+body.switch{
+    background-image:url(images/background2.png);
+    background-size:1200px;
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-color:rgb(0, 0, 46);
+    transition-duration:0.5s;
+}
+
+section{
+    font-size:14px;
+}
+
+section.switch{
+    font-size:14px;
+    color:white;
+}
+
+section.switch li{
+    font-size:14px;
+    color:white;
+    text-decoration:none;
+}
+
+button{
+    width:200px;
+    height:100px;
+    position:absolute;
+    left:565px;
+    bottom:355px;
+    opacity:50%;
+}
