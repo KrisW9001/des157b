@@ -1,34 +1,42 @@
 {
     "point1" : {
         "from" : "atlus",
+        "name" : "Atlus (Persona Soundtracks)",
         "listens" : 5
     },
     "point2" : {
         "from" : "arc",
+        "name" : "Arc Systems (Guilty Gear Soundtracks)",
         "listens" : 4
     },
     "point3" : {
         "from" : "sega",
+        "name" : "Sega (Sonic Frontiers Soundtrack)",
         "listens" : 3
     },
     "point4" : {
         "from" : "ace",
+        "name" : "Ace of Hearts",
         "listens" : 3
     },
     "point5" : {
         "from" : "tssf",
+        "name" : "The Story So Far",
         "listens" : 13
     },
     "point6" : {
         "from" : "adtr",
+        "name" : "A Day To Remember",
         "listens" : 7
     },
     "point7" : {
         "from" : "square",
+        "name" : "Square Enix (Kingdom Hearts Soundtracks)",
         "listens" : 2
     },
     "point8" : {
         "from" : "other",
+        "name" : "other/misc",
         "listens" : 12
     }
 
