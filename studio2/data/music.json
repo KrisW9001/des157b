@@ -1,0 +1,35 @@
+{
+    "point1" : {
+        "from" : "atlus",
+        "listens" : 5
+    },
+    "point2" : {
+        "from" : "arc",
+        "listens" : 4
+    },
+    "point3" : {
+        "from" : "sega",
+        "listens" : 3
+    },
+    "point4" : {
+        "from" : "ace",
+        "listens" : 3
+    },
+    "point5" : {
+        "from" : "tssf",
+        "listens" : 13
+    },
+    "point6" : {
+        "from" : "adtr",
+        "listens" : 7
+    },
+    "point7" : {
+        "from" : "square",
+        "listens" : 2
+    },
+    "point8" : {
+        "from" : "other",
+        "listens" : 12
+    }
+
+}
