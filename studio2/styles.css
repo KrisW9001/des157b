@@ -16,14 +16,80 @@ h3{
     max-width:1200px;
 }
 
-.bubble{
-    width:100px;
-    height:100px;
+button{
+    margin-bottom:15px;
+    padding:20px;
+    border-radius:75px;
     background-color:blue;
-    margin:15px;
-    border-radius:100%;
+    color:white;
+    border-color:darkblue;
+    transition-duration:.25s;
+}
+
+button:hover{
+    transition-duration:.25s;
+    background-color:orange;
+}
+
+button:active{
+    transition-duration:.005s;
+    background-color:orangered;
 }
 
 p{
-    max-width:150px;
+    transition-duration:1s;
+    width:100px;
+    height:100px;
+    background-color:rgba(255, 255, 255, 0.512);
+    border-radius:100%;
+    margin:auto;
+    font-size:10px;
+    display:grid;
+    place-items:center;
+    color:rgba(240, 248, 255, 0);
+}
+
+#atlus:hover{
+    transition-duration:1s;
+    width:500px;
+    height:500px;
+    background-color:crimson;
+    font-size:36px;
+    color:white;
+}
+
+#arc:hover{
+    transition-duration:1s;
+    width:400px;
+    height:400px;
+    background-color:rgb(86, 0, 0);
+    font-size:36px;
+    color:rgb(170, 170, 170);
+}
+
+#sega:hover{
+    transition-duration:1s;
+    width:300px;
+    height:300px;
+    background-color:rgb(33, 0, 221);
+    font-size:28px;
+    color:white;
+}
+
+#ace:hover{
+    transition-duration:1s;
+    width:300px;
+    height:300px;
+    background-color:rgb(162, 226, 253);
+    font-size:36px;
+    color:rgb(240, 240, 240);
+}
+
+#tssf:hover{
+    transition-duration:1s;
+    width:1300px;
+    height:1300px;
+    background-color:rgb(230, 245, 174);
+    font-size:60px;
+    color:rgb(46, 46, 46);
 }
