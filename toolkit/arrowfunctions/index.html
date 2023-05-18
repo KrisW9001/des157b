@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Arrow Functions</title>
+    <style>
+        html {
+            background-color: #efefef;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4em;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h1{
+            font-size:40px;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer{
+            padding:20px;
+            color:black;
+            background-color:slategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arrow Functions</h1>
+
+    <h2>Named Function</h2>
+    <p>The following function takes any and all uppercase letters in a string and turns them into a lowercase letter. Check the console to see what it does.</p>
+    <code>
+        <pre>
+            function makeLower(aString) {
+                return aString.toLowerCase();
+            }
+
+            console.log(makeLower("ThIs HaS a LoT oF UpPeRcAsE lEtTeRs"));
+        </pre>
+    </code>
+
+    <h2>Function Expression</h2>
+    <p>The same function, but as a function expression. This turns the function into a value and treats a variable as a function. Useful for using the same function for multiple different instances. The code here uses "bString" because "aString" is already in use.</p>
+    <code>
+        <pre>
+            const makeLower2 = function(bString){
+                return bString.toLowerCase();
+            }
+
+            console.log(makeLower2("THIS IS BEING TYPED WITH CAPS LOCK TURNED ON"));
+        </pre>
+    </code>
+
+    <h2>Arrow Function</h2>
+    <p>This removes the need to define something as a function by using an arrow to automatically indicate that it is a function. This makes the code much more condensed.</p>
+    <code>
+        <pre>
+            const makeLower3 = (cString) => {
+                return cString.toLowerCase();
+            }
+
+            console.log(makeLower3("MAN I SURE DO LOVE TYPING WITH ALL CAPS ON I REALLY LIKE IT WHEN ALL MY LETTERS LOOK LIKE BLOCKS WHEN I SQUINT"));
+        </pre>
+    </code>
+    <p>The best part about this is that you can remove certain parts of the code that define parts of the function due to the way the arrow function is made. This example code will still work even without the curly braces and the return command, the arrow takes care of it by itself.</p>
+    <code>
+        <pre>
+            const makeLower4 = dString => dString.toLowerCase();
+
+            console.log(makeLower4("AW YEAH LETTERS LETS GOO LOOK AT ALL OF THESE CAPITAL LETTERS"));
+        </pre>
+    </code>
+
+    <p>Here are some more examples of how arrow functions work with different paremeters.</p>
+    <h2>Two Parameters</h2>
+    <code>
+        <pre>
+            const doubleThing = (thingone, thingtwo) => `${thingone} ${thingtwo}`;
+
+            console.log(doubleThing('chicken', 'sandwich'));
+        </pre>
+    </code>
+
+    <h2>No Parameters</h2>
+    <code>
+        <pre>
+            const magic = () => {
+                const first = "Abra";
+                const second = "Kadabra";
+                const third = "Alakazam";
+                return `${first} ${second} ${third}`;
+            }
+
+            console.log(magic('first', 'second', 'third'));
+        </pre>
+    </code>
+
+
+    <br>
+    <footer> Kris Wilson 2023 </footer>
+    
+    
+</body>
+</html>
