@@ -47,6 +47,10 @@ section{
     left:0;
 }
 
+.mappart:hover{
+    cursor:pointer;
+}
+
 button{
     position:relative;
     left:30px;
@@ -76,8 +80,6 @@ div{
     padding:20px;
 }
 
-
-
 div p{
     color:rgb(208, 211, 223);
     max-width:450px;
@@ -106,6 +108,9 @@ footer{
     opacity:100%;
 }
 
-.invisible{
-    opacity:0%
+
+
+.hidden{
+    opacity:0%;
+    pointer-events:none;
 }
