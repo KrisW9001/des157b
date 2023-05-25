@@ -12,12 +12,80 @@ h1{
     font-size:80px;
     color:rgba(255, 192, 54, 1);
     text-shadow:5px 5px rgb(52, 52, 52);
+    margin-bottom:10px;
+    margin-left:10px;
 }
 
-aside{
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:36px;
+    color:rgba(255, 192, 54, 1);
+    text-shadow:5px 5px rgb(52, 52, 52);
+    margin-top:10px;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+
+#quote{
+    margin-left:250px;
+    font-size:20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(255, 255, 255);
+    max-width:500px;
+
+}
+
+main aside{
     position:absolute;
     left:850px;
     top:30px;
+}
+
+section{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+button{
+    position:relative;
+    left:30px;
+    top:20px;
+    font-size:28px;
+    color:rgba(255, 192, 54, 1);
+    background: rgb(0,40,171);
+    background: linear-gradient(0deg, rgba(0,40,171,1) 0%, rgba(29,51,255,1) 100%);
+    border-style:none;
+    border-radius:30%;
+    width:120px;
+    height:65px;
+}
+
+section aside{
+    position:absolute;
+    margin-top:30px;
+    margin-left:70px;
+}
+
+div{
+    position:fixed;
+    left:650px;
+    top:55px;
+    background-color:rgba(7, 5, 15, 0.644);
+    border-radius:5%;
+    padding:20px;
+}
+
+
+
+div p{
+    color:rgb(208, 211, 223);
+    max-width:450px;
+    font-size:18px;
+}
+
+#para2{
+    margin-left:300px;
 }
 
 footer{
@@ -32,4 +100,12 @@ footer{
     background-color:rgba(29, 51, 255, 1);
     width:1920px;
     padding-left:20px;
+}
+
+.visible{
+    opacity:100%;
+}
+
+.invisible{
+    opacity:0%
 }
