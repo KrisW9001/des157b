@@ -63,6 +63,20 @@ button{
     border-radius:30%;
     width:120px;
     height:65px;
+    cursor:pointer;
+}
+
+#infobox{
+    position:absolute;
+    left:-350px;
+    top:330px;
+    font-size:30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:200px;
+    background-color:rgba(7, 5, 15, 0.644);
+    border-radius:15%;
+    padding:20px;
+    color:rgb(101, 101, 104);
 }
 
 section aside{
@@ -104,13 +118,19 @@ footer{
     padding-left:20px;
 }
 
+section footer{
+    text-align:center;
+}
+
 .visible{
+    transition-duration:.5s;
     opacity:100%;
 }
 
 
 
 .hidden{
+    transition-duration:.5s;
     opacity:0%;
     pointer-events:none;
 }

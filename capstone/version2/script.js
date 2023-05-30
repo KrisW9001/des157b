@@ -9,6 +9,7 @@
     let title = document.getElementById('piecename');
     let main = document.getElementsByTagName('main');
     let section = document.getElementsByTagName('section');
+    let infobox = document.getElementById('infobox');
 
     //defining values of each image map element to make later code shorter
 
@@ -31,13 +32,30 @@
     const finalring2 = document.getElementById('finalring2');
 
     birds.addEventListener('click', birdpage);
+        birds.addEventListener('mouseover', birdinfo);
+    birds2.addEventListener('click', birdpage);
+        birds2.addEventListener('mouseover', birdinfo);
+    button.addEventListener('click', goback);
 
-    function birdpage(){
-        birdpage.preventDefault();
-        document.getElementsByTagName('main').setAttribute('class', 'hidden');
-        console.log('main will now be invisible');
-        document.getElementsByTagName('section').className = 'visible';
+    function birdinfo(event){
+        event.preventDefault();
+        infobox.setAttribute('color', 'white');
     }
 
-//code does not work, page refreshes and does not change visibility
+    //functions to change the current page
+    function goback(event){
+        event.preventDefault();
+        document.getElementsByTagName('main')[0].setAttribute('class', 'visible');
+        console.log('main will now be visible');
+        document.getElementsByTagName('section')[0].className = 'hidden';
+    }
+
+    function birdpage(event){
+        event.preventDefault();
+        document.getElementsByTagName('main')[0].setAttribute('class', 'hidden');
+        console.log('main will now be invisible');
+        document.getElementsByTagName('section')[0].className = 'visible';
+    }
+
+
 })()
