@@ -8,6 +8,7 @@
     let para2 = document.getElementById('para2');
     let title = document.getElementById('piecename');
     let main = document.getElementsByTagName('main');
+    let body = document.getElementsByTagName('body');
     let section = document.getElementsByTagName('section');
     let infobox = document.getElementById('infobox');
 
@@ -31,15 +32,21 @@
     const finalring = document.getElementById('finalring');
     const finalring2 = document.getElementById('finalring2');
 
+    body.addEventListener('mouseover', resetinfo);
     birds.addEventListener('click', birdpage);
         birds.addEventListener('mouseover', birdinfo);
     birds2.addEventListener('click', birdpage);
         birds2.addEventListener('mouseover', birdinfo);
     button.addEventListener('click', goback);
 
+    function resetinfo(event){
+        event.preventDefault();
+        infobox.style.color='rgb(101, 101, 104)';
+    }
+
     function birdinfo(event){
         event.preventDefault();
-        infobox.setAttribute('color', 'white');
+        infobox.style.color='rgb(208, 211, 223)';
     }
 
     //functions to change the current page
@@ -57,5 +64,5 @@
         document.getElementsByTagName('section')[0].className = 'visible';
     }
 
-
+    
 })()
