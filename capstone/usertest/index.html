@@ -8,7 +8,14 @@
     <script src="script.js" defer></script>
     <title>Capstone Project User Test</title>
 </head>
-<body>
+
+<script>
+    function startFunction(){
+        let popup = alert('Welcome to the user test! Please perform these actions: 1. Navigate to a different section of the website  2. Consider the effectiveness of the website as an informative tool for feedback   3. Leave that section and navigate to a new one.');
+    }
+</script>
+
+<body   onload="startFunction()">
     <main class="visible">
         <h1>The City of Davis</h1>
         <h2>Interactive Centennial Seal</h2>
@@ -51,7 +58,7 @@
             <p>CITY OF DAVIS</p>
         </footer>
         <aside>
-            <img id="piece" src="images/cityofdavis transparentBG.png" alt="city of davis panel" width="584px" heigh="630px">
+            <img id="piece" src="images/cityofdavis transparentBG.png" alt="image of the currently selected seal panel" width="584px" heigh="630px">
         </aside>
         <button>< BACK</button>
         <div>

@@ -66,6 +66,11 @@ button{
     cursor:pointer;
 }
 
+button:hover{
+    background: rgb(56, 120, 216);
+    background: linear-gradient(0deg, rgb(13, 70, 155) 0%, rgba(56, 120, 216) 100%);
+}
+
 #infobox{
     position:absolute;
     left:-350px;
@@ -122,12 +127,11 @@ section footer{
     text-align:center;
 }
 
+
 .visible{
     transition-duration:.5s;
     opacity:100%;
 }
-
-
 
 .hidden{
     transition-duration:.5s;
