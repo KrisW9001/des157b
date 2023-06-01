@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title>Capstone Project Usability Test Results</title>
+</head>
+<body>
+    <main>
+        <h1>Capstone Project Usability Test Results</h1>
+        <p>Two classmates were used for usability testing, and the discoveries made during these tests were challenges that I was already aware of with the design, but were severely underestimated.</p>
+        <h2>Problem 1: Unclear Instructions</h2>
+        <img src="images/Capture1.png" alt="image of footer and info box">
+        <p><em>Image of footer and info box, which testers said had conflicting information</em></p>
+        <p>Both testers reported that it was not clear that they were meant to click on a piece of the seal. The footer, which reads "click to get started" gave them both the impression that they could click anywhere on the page, which does nothing unless on the seal. The info box's default message of "select a piece of the seal" may also have been too difficult to see to influence their decisions without going out of their way to see it (I think the first tester didn't even notice that it had a default message). They also reported that the footer was too big and felt unusual that it was touching the image of the seal, even though I put effort into ensuring that the image would take priority. These will require small, but crucial design changes to ensure that people will not be confused when they are attempting to click an uninteractible element.</p>
+        <h3>Problem 2: Lack of visual feedback</h3>
+        <img src="images/Capture2.png" alt="image of interaction between seal panels and info box">
+        <p><em>Image illustrating the interaction between hovering over the panels and the info box</em></p>
+        <p>I implemented the info box as visual feedback to inform someone of what piece of the seal they are hovering over, to make it easier to select individual pieces. During the test, this had very little effect in that regard. This info box was the result of the difficulty of implementing other forms of visual feedback due to the nature of image maps. The image of the seal on the main page uses an image map to make individual parts of the image have seperate interactions. Due to the fact that the individual parts of the image map cannot have css applied to them in a conventional manner, I did could not make them glow or apply a tooltip to them as I had planned in time for the user test. It ould be greatly beneficial if one or both of those features could be implemented into the final project since it would solve this issue easily, but I will have to determine if it is even possible.</p>
+        <h3>Problem 3: What is interactible and what is not</h3>
+        <img src="images/Capture3.png" alt="image of what on the page is meant to be directly interacted with">
+        <p><em>Image illustrating what elements on the page are not meant to be clicked on</em></p>
+        <p>The project is meant to prominently feature the centennial seal as the interactive navigation element. However, testing revealed that there was confusion on which elements can be interacted with. This is an extension of an issue highlighted in the first paragraph, where testers would click on the info box and the footer. This is most likely due to their design standing out from the rest of the page. This has two solutions: make the seal more prominent or make the uninteractible elements less prominent. Changing the size of the seal would require re-making the entire image map, so I will experiment with changing the color and opacity of the other elements.</p>
+        <h3>Additional note</h3>
+        <p>Not every panel's page was completed by the time of the user test, and some had not even been started. However, clicking on the panels that did not have script to transition the page resulted in a page refresh. The second tester encountered this multiple times and unfortunately thought that the seal was completely unfinished, completely missing the panels that actually had functioning scripts. This is not an issue with the design of the site, but it is important to note since it was both a cause and a result of the three issues that became clear during the test.</p>
+        <h3>Conclusion and Plan</h3>
+        <p>The design of the site will need major changes to make it more clear what the intended actions are. In addition, the panel's respective pages will have more content to fill the visual gaps between the paragraphs. Most of the feedback was not related to the structure of the site's navigation system -which is the main feature- but rather with design nuances. These are crucial to get right since they obviously had a negative effect on the tester's experience.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    width:700px;
+    margin:auto;
+    background-color:slategrey;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+main{
+    background-color:rgba(183, 214, 243, 0.726);
+    padding:30px;
+    margin-top:10px;
+    border-radius: 5%;
+}
+
+a{
+    font-size:10px;
+}
+
+img{
+    
+    max-width:500px;
+}
+
+em{
+    font-size:12px;
+}
