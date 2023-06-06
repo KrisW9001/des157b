@@ -51,6 +51,12 @@
         market.addEventListener('mouseover', marketinfo);
     selma.addEventListener('click', selmapage);
         selma.addEventListener('mouseover', selmainfo);
+    university.addEventListener('click', universitypage);
+        university.addEventListener('mouseover', universityinfo);
+    farm.addEventListener('click', farmpage);
+        farm.addEventListener('mouseover', farminfo);
+    townname.addEventListener('click', townnamepage);
+        townname.addEventListener('mouseover', townnameinfo);
     button.addEventListener('click', goback);
 
     //functions to update the infobox
@@ -100,6 +106,24 @@
         event.preventDefault();
         infobox.style.color='rgb(208, 211, 223)';
         document.getElementById('infobox').innerHTML="Community & Selma March";
+    }
+
+    function universityinfo(event){
+        event.preventDefault();
+        infobox.style.color='rgb(208, 211, 223)';
+        document.getElementById('infobox').innerHTML="UC Davis";
+    }
+
+    function farminfo(event){
+        event.preventDefault();
+        infobox.style.color='rgb(208, 211, 223)';
+        document.getElementById('infobox').innerHTML="University Farm & Davisville";
+    }
+
+    function townnameinfo(event){
+        event.preventDefault();
+        infobox.style.color='rgb(208, 211, 223)';
+        document.getElementById('infobox').innerHTML="Davis Enterprise & Town Name";
     }
 
     //functions to change the current page
@@ -193,6 +217,39 @@
         console.log('main will now be invisible');
         document.getElementById('piecename').innerHTML="Community & Selma March";
         document.getElementById('piece').setAttribute('src', 'images/selma.png');
+        document.getElementById('para1').innerHTML='Placeholder Text';
+        document.getElementById('para2').innerHTML='Placeholder Text';
+        document.getElementsByTagName('section')[0].className = 'visible';
+    }
+
+    function universitypage(event){
+        event.preventDefault();
+        document.getElementsByTagName('main')[0].setAttribute('class', 'hidden');
+        console.log('main will now be invisible');
+        document.getElementById('piecename').innerHTML="UC Davis";
+        document.getElementById('piece').setAttribute('src', 'images/university.png');
+        document.getElementById('para1').innerHTML='Placeholder Text';
+        document.getElementById('para2').innerHTML='Placeholder Text';
+        document.getElementsByTagName('section')[0].className = 'visible';
+    }
+
+    function farmpage(event){
+        event.preventDefault();
+        document.getElementsByTagName('main')[0].setAttribute('class', 'hidden');
+        console.log('main will now be invisible');
+        document.getElementById('piecename').innerHTML="University Farm & Davisville";
+        document.getElementById('piece').setAttribute('src', 'images/farm.png');
+        document.getElementById('para1').innerHTML='Placeholder Text';
+        document.getElementById('para2').innerHTML='Placeholder Text';
+        document.getElementsByTagName('section')[0].className = 'visible';
+    }
+
+    function townnamepage(event){
+        event.preventDefault();
+        document.getElementsByTagName('main')[0].setAttribute('class', 'hidden');
+        console.log('main will now be invisible');
+        document.getElementById('piecename').innerHTML="Davis Enterprise & Town Name";
+        document.getElementById('piece').setAttribute('src', 'images/townname.png');
         document.getElementById('para1').innerHTML='Placeholder Text';
         document.getElementById('para2').innerHTML='Placeholder Text';
         document.getElementsByTagName('section')[0].className = 'visible';
