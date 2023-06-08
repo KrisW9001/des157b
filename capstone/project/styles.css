@@ -32,7 +32,12 @@ h2{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(255, 255, 255);
     max-width:500px;
+    
+}
 
+
+a{
+    color:rgb(109, 224, 245);
 }
 
 main aside{
